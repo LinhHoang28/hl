@@ -4,48 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dang Hoang Linh</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <header>
-  <nav>
-    <a href="#about">Giới thiệu</a>
-    <a href="#projects">Dự án</a>
-    <a href="#contact">Liên hệ</a>
+  <header class="site-header container">
+  <a class="logo" href="#">Hoang Linh</a>
+  <nav class="site-nav">
+    <ul>
+      <li><a href="#about">Giới thiệu</a></li>
+      <li><a href="#projects">Dự án</a></li>
+      <li><a href="#contact">Liên hệ</a></li>
+    </ul>
   </nav>
 </header>
-<main>
-  <section id="about">
+<main class = container>
+  <section id="about" class ="hero">
+    <div>
     <h1>Dang Hoang Linh</h1>
-    <p>Sinh viên Vật lý, thích làm web.</p>
-    <img src="me.jpg" alt=" ga">
+    <p>Sinh viên Vật lý - Điện tử, thích trực quan hóa dữ liệu do.</p>
+    <a class="button" href="#contact">Liên hệ</a>
+    </div>
+    <img src="me.jpg" alt=" Anh chan dung">
   </section>
 <section id="projects">
   <h2>Dự án</h2>
-  <article>
+  <div class = "project">
+  <article class="card">
     <h3>Mô phỏng con lắc</h3>
     <p>Python + Matplotlib, 2025.</p>
   </article>
-  <article>
+  <article class="card">
     <h3>Đo nhiệt độ bằng Arduino</h3>
     <p>C++ và cảm biến DS18B20.</p>
-  </article>
+  </article class="card">
     <h3> Mô phỏng robot.</h3>
     <p> Arduino.</p>
+    </div>
 </section>
 <section id="contact">
   <h2>Liên hệ</h2>
-  <form>
+<form>
+  <div class="field">
     <label for="name">Họ tên</label>
     <input id="name" name="name" required>
+  </div>
+  <div class="field">
     <label for="email">Email</label>
     <input id="email" type="email"
            name="email" required>
+  </div>
+  <div class="field">
     <label for="msg">Lời nhắn</label>
     <textarea id="msg" name="msg"></textarea>
-    <button>Gửi</button>
-  </form>
+  </div>
+  <button class="button">Gửi</button>
+</form>
 </section>
+
 </main>
-<footer>© Dang Hoang Linh
+<footer class ="container">© Dang Hoang Linh</footer>
 </body>
 </html>
