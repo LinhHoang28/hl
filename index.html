@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dang Hoang Linh</title>
+    <title>Đặng Hoàng Linh</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header container">
-  <a class="logo" href="#">Hoang Linh</a>
+  <a class="logo" href="#">Hồng Linh</a>
   <nav class="site-nav">
     <ul>
       <li><a href="#about">Giới thiệu</a></li>
@@ -20,26 +20,37 @@
 <main class = container>
   <section id="about" class ="hero">
     <div>
-    <h1>Dang Hoang Linh</h1>
-    <p>Sinh viên Vật lý - Điện tử, thích trực quan hóa dữ liệu do.</p>
+    <h1>Đặng Hoàng Linh</h1>
+    <p> Khoa Vật lý - Vật Lý Kĩ Thuật</p>
     <a class="button" href="#contact">Liên hệ</a>
     </div>
-    <img src="me.jpg" alt=" Anh chan dung">
+    <img class="profile-pic" src="me.jpg" alt=" Anh chan dung">
   </section>
 <section id="projects">
   <h2>Dự án</h2>
-  <div class = "project">
-  <article class="card">
-    <h3>Mô phỏng con lắc</h3>
-    <p>Python + Matplotlib, 2025.</p>
-  </article>
-  <article class="card">
-    <h3>Đo nhiệt độ bằng Arduino</h3>
-    <p>C++ và cảm biến DS18B20.</p>
-  </article class="card">
-    <h3> Mô phỏng robot.</h3>
-    <p> Arduino.</p>
-    </div>
+  <div id="filters">
+  </div>
+ 
+  <ul id ="project-list">
+  </ul>
+    <template id="project-card">
+      <li class="card">
+        <h3></h3>
+         <p class="tags"></p>
+      </li>
+    </template>
+</section>
+<section id="skills">
+  <h2>Kỹ năng của tôi</h2>
+  <ul class="tags">
+    <li>HTML5</li>
+    <li>CSS3</li>
+    <li>JavaScript</li>
+    <li>Fullstack</li>
+    <li>Nhúng</li>
+    <li>Phân tích dữ liệu</li>
+    <li>Git & GitHub</li>
+  </ul>
 </section>
 <section id="contact">
   <h2>Liên hệ</h2>
@@ -63,5 +74,10 @@
 
 </main>
 <footer class ="container">© Dang Hoang Linh</footer>
+<script type="module">
+      import { projects } from './data.js';
+      console.log("Danh sách dự án:", projects);
+  </script>
+<script type="module" src="app.js"></script>
 </body>
 </html>

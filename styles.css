@@ -61,7 +61,7 @@ a { color: inherit; }
 }
 .card {
   padding: 1.5rem;
-  border: 1px solid #d2d4d7;
+  border: 1px solid #8e0bda;
   border-radius: 0.75rem;
   background: var(--color-bg);
 }
@@ -85,7 +85,7 @@ input, textarea {
   padding: 0.75rem 1.25rem;
   border: 0;
   border-radius: 0.5rem;
-  color: #e2e44f;
+  color: #e5e909;
   background: var(--color-accent);
   text-decoration: none;
   cursor: pointer;
@@ -93,4 +93,31 @@ input, textarea {
 :focus-visible {
   outline: 3px solid var(--color-accent);
   outline-offset: 3px;
+}
+.profile-pic {
+  width: 250px;
+  height: 250px; 
+  border-radius: 50%;
+  object-fit: cover;
+}
+.tags {
+  list-style: none; 
+  padding: 0;    
+  margin: 0;
+  
+  display: flex;    
+  flex-wrap: wrap;  
+  gap: 10px;        
+}
+.tags li {
+  background-color: var(--color-accent); 
+  color: white;                          /* Chữ màu trắng cho nổi bật */
+  padding: 8px 16px;                     /* Khoảng cách từ chữ tới viền (Trên/Dưới 8px, Trái/Phải 16px) */
+  border-radius: 20px;                   
+  font-size: 0.9rem;                     /* Chữ nhỏ hơn bình thường một chút */
+  font-weight: bold;                     /* In đậm chữ */
+}#project-list {
+  list-style: none; /* Xóa dấu chấm đen */
+  padding: 0;       /* Xóa khoảng trống lề trái mặc định của thẻ ul */
+  margin: 0;        /* Căn chỉnh lại lề cho gọn gàng */
 }
